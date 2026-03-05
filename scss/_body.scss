@@ -1,0 +1,243 @@
+body{
+    font-family:$font-family;
+    @include ancho(100%);
+     header{
+         margin: 0 20% 0 20%;
+         .principal{
+             @include ancho(100%);
+             font-weight: 800;
+             @include flex();
+             #logo{
+                  @include ancho(30%);
+             }
+             #slogan{
+                 @include ancho(10%);
+             }
+             #titulo{
+                 @include ancho(67%);  
+                 
+             }
+            
+         }
+         .menu{
+             background-color: $colorBlue;
+             @include ancho(100%);
+             height: 60px;
+             padding: 20px 45px 20px 20px;
+             nav{
+                 @include flex();
+                 a{
+                     color:$colorWhite;
+                     font-size: 1rem;
+                     text-decoration: none; 
+                     @include mediaquery(912px){
+                       
+                         font-size: .5rem;
+                        
+                     } 
+                     &:hover{
+                         @include link($colorYellow);
+                     }
+                     
+                 }
+             }
+         }
+     }
+     main{
+         margin: 0 20% 0 20%;
+         .container{
+             @include ancho(100%);
+             padding: 20px 45px 20px 20px;
+             display:grid;
+             grid-gap:10px;
+             grid-template-columns: repeat(2,1fr); 
+             article{
+                 @include ancho(100%); 
+             }
+             &__registro{
+                 background-color: $colorgray;
+                 form{
+                     @include ancho(100%); 
+                     fieldset{
+                        @include mediaquery(1130px){
+                            font-size:.8rem;
+                         }
+                        
+                        color: $colorWhite;
+                         legend{
+                             @include legend();
+                         }
+                         .error-img{
+                            width: 18px;
+                         }
+                         .btnRegister{
+                            background-color: colorBlue;
+                            color: colorWhite;
+                         }
+                         input{
+                            font-size:1rem;
+                             margin-bottom: 8px;
+                             border-radius: 5px;
+                             border: none;
+                             padding: 5px 5px 5px 5px;
+                         }
+                         select{
+                             font-size:1rem;
+                             border: none;
+                             margin-bottom: 11px;
+                             border-radius: 5px;
+                             padding: 5px 0 5px 0;
+                         }
+                         /*colores para las etiquetas de estatus*/
+                         #label-e{
+                             background-color: $colorGreen;
+                         }
+                         #label-p{
+                             background-color: $colorRed;
+                         }
+                         #label-t{
+                             background-color: $colorYellow;
+                         }
+                       
+                     }
+                 }
+             }
+             &__panel{
+                 background-color: $colorGreen;
+                 align-content: space-between;
+                 fieldset{
+                    @include mediaquery(1130px){
+                        font-size:.8rem;
+                     }
+                     
+                     color:#fff;
+                     border:0; 
+                     border-radius: 10px; 
+                     legend{
+                         @include legend();
+                     }
+                   }
+             }
+             &__guias{
+                 grid-column: 1/ span 2; 
+                 form{
+                     .guias__lista{
+                         background-color: $colorOrange;
+                         align-items: center;
+                         button{
+                            @include botones();
+                            
+                            &:hover{
+                                @include hover($colorYellow);
+                                font-weight: 600;
+                            }
+                           
+                         }
+                         legend{
+                             @include legend();
+                         }
+                         table{
+                            @include ancho(100%);
+                             color:$colorWhite;
+                             table-layout: fixed;
+                             border-collapse: collapse;
+                             border: solid 1px $colorWhite;
+                             font-size: 1rem;
+                             @include mediaquery(1130px){
+                                font-size:.8rem;
+                             }
+                             @include mediaquery(925px){
+                                font-size:.6rem;
+                             }
+                             @include mediaquery(754px){
+                                font-size:.5rem;
+                             }
+                             @include mediaquery(610px){
+                                font-size:.38rem;
+                             }
+                             thead{
+                                 background-color: $colorDark-orange;
+                                 tr{
+                                     th{
+                                         padding: 20px 15px;
+                                         font-weight: 900;
+                                         border:1px solid $colorOrange;
+                                     }
+                                 }
+                             }
+                             tbody{
+                                 tr{
+                                     border-bottom:1px solid $colorWhite;
+                                     td{
+                                       // word-wrap: break-word;
+                                        overflow-wrap: break-word;
+                                        //word-break: break-all;
+                                        white-space: normal;
+                                         border:1px solid $colorWhite;
+                                         padding: 20px;
+                                         .btnMod{
+                                            width: 35px;
+                                         }
+                                     }
+                                     &:hover{
+                                         @include hover($colorYellow);
+                                         font-weight: 900;
+                                     }
+                                 }
+                             }
+                            
+                            
+                         }
+                     }
+                 }
+             }
+         }
+     }
+     footer{
+        margin: 0 20% 0 20%;
+        .footer-blue{
+            padding: 20px 45px 20px 20px;
+            @include ancho(100%); 
+            background-color:$colorBlue;
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            &__info{    
+                align-items: justify;
+               @include ancho(100%);
+                color: $colorWhite;
+                line-height: .3cm; 
+                p{
+                    font-size: 13px; 
+                    line-height: .3cm; 
+                  }  
+                label{
+                font-size: 13px; 
+                line-height: .3cm;
+                }
+            }
+            &__media{
+                #logo-sky{
+                    width: 80%; 
+                }
+                .media__social-media{
+                    grid-column: 1;
+                    grid-row: 2;    
+                    display:flex;
+                    justify-content:space-evenly;
+                    img{
+                        @include ancho(12%)  
+                    }
+                }
+            }
+            
+        }
+        .copy{
+            background-color: $colorligthBlue;
+            color:$colorWhite;
+            font-weight: 800px;
+            @include ancho(100%);
+            height: 50px;
+            padding: 3px 45px 5px 20px;
+        }
+    }
+ }

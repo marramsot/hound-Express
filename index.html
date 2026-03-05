@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css">
+    <script src="https://kit.fontawesome.com/6a6a2610e3.js" crossorigin="anonymous"></script>
+    <script src="js/function.js" defer></script>
+    <title>Seguimiento de paquete</title>
+</head>
+<body>
+    <header>
+        <!--logotipo-->
+        <section class="principal">
+            <img src="img/logo.png" alt="Logotipo fondo blanco" id="logo" class="principal__logo">      
+            <!--<h1>Seguimiento de paquete </h1>-->
+            <img src="img/titulo.png" alt="styles" id="titulo" class="principal__título">
+           <img src="img/slogan.png" alt="styles" id="slogan" class="principal__slogan">
+        </section>
+        <section class="menu" id="menu">
+            <nav class="menu__nav id=menu__nav">
+                <ul><a href="">Registro de Guías</a></ul>
+                <ul><a href="">Estado General</a></ul>
+                <ul><a href="">Lista de Guías</a></ul>
+                <ul><a href="">Buscar Guías</a></ul>
+                <ul><a href="">Historial de Guías</a></ul>        
+            </nav>
+        </section>
+      
+    </header>
+    <main>
+        <section class="container">
+            <article class="container__registro">
+                <form action="" id="registerform" autocomplete="off">
+                    <fieldset class="">
+                        <legend>FORMULARIO DE REGISTRO DE GUIAS</legend>
+                        <div class="campo">
+                            <label for="n-guia">Número de Guía:</label>
+                            <input  placeholder="Número de guía" name="n-guia" id="n-guia">
+                            <img id="imgguia" class="error-img" src="img/error.png" hidden>
+                        </div>
+                        <div class="campo">
+                            <label for="origen">Origen:</label>
+                            <select name="origen" id="origen">
+                            <option value="">Selecciona el origen</option>
+                            <option value="aguascalientes">Aguascalientes</option>
+                            <option value="baja california">Baja California</option>
+                            <option value="baja california sur">Baja California Sur</option>
+                            <option value="campeche">Campeche</option>
+                            <option value="coahuila">Coahuila</option>
+                            <option value="colima">Colima</option>
+                            <option value="chiapas">Chiapas</option>
+                            <option value="chihuahua">Chihuahua</option>
+                            <option value="ciudad de mexico">Ciudad de México</option>
+                            <option value="durango">Durango</option>
+                            <option value="estado de mexico">Estado de México</option>
+                            <option value="guanajuato">Guanajuato</option>
+                            <option value="guerrero">Guerrero</option>
+                            <option value="hidalgo">Hidalgo</option>
+                            <option value="jalisco">Jalisco</option>
+                            <option value="michoacan">Michoacán</option>
+                            <option value="morelos">Morelos</option>
+                            <option value="nayarit">Nayarit</option>
+                            <option value="nuevo leon">Nuevo León</option>
+                            <option value="oaxaca">Oaxaca</option>
+                            <option value="puebla">Puebla</option>
+                            <option value="queretaro">Querétaro</option>
+                            <option value="quintana roo">Quintana Roo</option>
+                            <option value="san luis potosi">San Luis Potosí</option>
+                            <option value="sinaloa">Sinalóa</option>
+                            <option value="sonora">Sonora</option>
+                            <option value="tabasco">Tabasco</option>
+                            <option value="tamaulipas">Tamaulipas</option>
+                            <option value="tlaxcala">Tlaxcala</option>
+                            <option value="veracruz">Veracruz</option>
+                            <option value="yucatan">Yucatán</option>
+                            <option value="zacatecas">Zacatecas</option>
+                            </select>
+                            <img class="error-img" src="img/error.png" hidden>
+                        </div>
+                         <div class="campo">
+                            <label for="destino">Destino:</label>
+                            <select name="destino" id="destino">
+                            <option value="">Selecciona el origen</option>
+                            <option value="aguascalientes">Aguascalientes</option>
+                            <option value="baja california">Baja California</option>
+                            <option value="baja california sur">Baja California Sur</option>
+                            <option value="campeche">Campeche</option>
+                            <option value="coahuila">Coahuila</option>
+                            <option value="colima">Colima</option>
+                            <option value="chiapas">Chiapas</option>
+                            <option value="chihuahua">Chihuahua</option>
+                            <option value="ciudad de mexico">Ciudad de México</option>
+                            <option value="durango">Durango</option>
+                            <option value="estado de mexico">Estado de México</option>
+                            <option value="guanajuato">Guanajuato</option>
+                            <option value="guerrero">Guerrero</option>
+                            <option value="hidalgo">Hidalgo</option>
+                            <option value="jalisco">Jalisco</option>
+                            <option value="michoacan">Michoacán</option>
+                            <option value="morelos">Morelos</option>
+                            <option value="nayarit">Nayarit</option>
+                            <option value="nuevo leon">Nuevo León</option>
+                            <option value="oaxaca">Oaxaca</option>
+                            <option value="puebla">Puebla</option>
+                            <option value="queretaro">Querétaro</option>
+                            <option value="quintana roo">Quintana Roo</option>
+                            <option value="san luis potosi">San Luis Potosí</option>
+                            <option value="sinaloa">Sinalóa</option>
+                            <option value="sonora">Sonora</option>
+                            <option value="tabasco">Tabasco</option>
+                            <option value="tamaulipas">Tamaulipas</option>
+                            <option value="tlaxcala">Tlaxcala</option>
+                            <option value="veracruz">Veracruz</option>
+                            <option value="yucatan">Yucatán</option>
+                            <option value="zacatecas">Zacatecas</option>
+                            </select>
+                            <img class="error-img" src="img/error.png" hidden>
+                        </div>
+                         <div class="campo">
+                            <label for="destinatario">Destinatario:</label>
+                            <input type="text" placeholder="Nombre del destinatario" id="destname">
+                            <img class="error-img" src="img/error.png" hidden>
+                        </div>
+                         <div class="campo">
+                            <label for="´creacion">Fecha de creación:</label>
+                            <input type="date" id="date">
+                            <img class="error-img" src="img/error.png" hidden>
+                        </div>
+                         <div class="campo--radio">
+                        <label for="status">Estado del paquete</label>
+                            <br>
+                            <input type="radio" name="status" id="pendiente" value="Pendiente">
+                            <label for="pendiente" id="label-p">Pendiente</label>
+                            <input type="radio" name="status" id="transito" value="En tránsito">
+                            <label for="transito" id="label-t">En tránsito</label>
+                            <input type="radio" name="status" id="entregado" value="Entregado">
+                            <label for="entregado" id="label-e">Entregado</label>
+                            <img class="error-img" src="img/error.png" hidden>
+                       </div>
+                       <input type="submit" value="Registrar" class="btnRegister">
+                    </fieldset>
+                </form>
+            </article>
+            <article class="container__panel">
+                <fieldset>
+                    <legend>PANEL DEL ESTADO GENERAL</legend>
+                    <label>Número total de guías activas:</label>
+                    <label for="" id="guiaActiva">0</label>
+                    <br><label>Guías en tránsito:</label>
+                    <label for="" id="guiaTransito">0</label>
+                    <br><label>Guías entregadas:</label>
+                    <label for="" id="guiaEntregada">0</label>
+                </fieldset>
+            </article>
+            <article class="container__guias">
+                <form action=""  >
+                    <fieldset class="guias__lista">
+                        <legend>LISTA DE GUÍAS</legend>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Número de guía</th>
+                                <th>Estado actual</th> 
+                                <th>Destinatario</th>
+                                <th>Origen</th>
+                                <th>Destino</th>
+                                <th>Última actualización</th>
+                                <th colspan="2">Modificar Estado</th>
+                            </tr>
+                            
+                        </thead>
+                        <tbody id="datatable">
+                        
+                            
+                        </tbody>
+                    </table>
+                    <button>Actualizar</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+   
+    </main>
+    <footer>
+        <section class="footer-blue">
+            <article class="footer-blue__media">
+                <img src="img/logoAzulBlancoHE.png" alt="logo-sky" id="logo-sky">
+                <div class="media__social-media">
+                    <a href="https://www.instagram.com/hound.express/?igsh=OGQ5ZDc2ODk2ZA%3D%3D#" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+                    <a href="https://www.linkedin.com/company/hound-express/" target="_blank"><img src="img/linkedin.png" alt="linkedin"></a>
+                    <a href="https://www.facebook.com/houndexpress?mibextid=kFxxJD" target="_blank"><img src="img/facebook.png" alt="facebook"></a>  
+                </div>
+            </article>
+            <article class="footer-blue__info">
+                <h2>Contáctanos</h2>
+                <h4>Horarios</h4>
+                <p>Lunes a viernes de 9:00 a 18:00 hrs.</p>
+                <p>Sábados de 9:00 a 13:00 hrs.</p>
+                <h4>México</h4>
+                <p>+52(55)4000 1920</p>
+                <i class="fa-solid fa-envelope"></i>
+                <label>sclientes1@hound-express.com</label>
+                <h4>USA</h4>
+                <p>+1(95)6568 3443</p>
+                <i class="fa-solid fa-envelope"></i>
+                <label>cslaredo1@hound-express.com</label>
+            </article>
+            
+        </section>
+       
+        <div class="copy">
+            <p> <small>Copyright &#169; 2025 Hound Express. Todos los derechos reservados.</small></p>
+        </div>
+    </footer>
+</body>
+</html>

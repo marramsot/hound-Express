@@ -1,0 +1,250 @@
+body {
+  font-family: "Open Sans", sans-serif !important;
+  width: 100%;
+}
+body header {
+  margin: 0 20% 0 20%;
+}
+body header .principal {
+  width: 100%;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+}
+body header .principal #logo {
+  width: 30%;
+}
+body header .principal #slogan {
+  width: 10%;
+}
+body header .principal #titulo {
+  width: 67%;
+}
+body header .menu {
+  background-color: #091E3F;
+  width: 100%;
+  height: 60px;
+  padding: 20px 45px 20px 20px;
+}
+body header .menu nav {
+  display: flex;
+  justify-content: space-between;
+}
+body header .menu nav a {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+@media screen and (max-width: 912px) {
+  body header .menu nav a {
+    font-size: 0.5rem;
+  }
+}
+body header .menu nav a:hover {
+  color: #ffc107;
+  cursor: pointer;
+  -webkit-text-decoration: line;
+          text-decoration: line;
+}
+body main {
+  margin: 0 20% 0 20%;
+}
+body main .container {
+  width: 100%;
+  padding: 20px 45px 20px 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+body main .container article {
+  width: 100%;
+}
+body main .container__registro {
+  background-color: #B2B2B2;
+}
+body main .container__registro form {
+  width: 100%;
+}
+@media screen and (max-width: 1130px) {
+  body main .container__registro form fieldset {
+    font-size: 0.8rem;
+  }
+}
+body main .container__registro form fieldset {
+  color: #ffffff;
+}
+body main .container__registro form fieldset legend {
+  color: #091E3F;
+  font-weight: 900;
+}
+body main .container__registro form fieldset .error-img {
+  width: 18px;
+}
+body main .container__registro form fieldset .btnRegister {
+  background-color: colorBlue;
+  color: colorWhite;
+}
+body main .container__registro form fieldset input {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 5px 5px 5px;
+}
+body main .container__registro form fieldset select {
+  font-size: 1rem;
+  border: none;
+  margin-bottom: 11px;
+  border-radius: 5px;
+  padding: 5px 0 5px 0;
+}
+body main .container__registro form fieldset {
+  /*colores para las etiquetas de estatus*/
+}
+body main .container__registro form fieldset #label-e {
+  background-color: #3DAE2B;
+}
+body main .container__registro form fieldset #label-p {
+  background-color: #dc3545;
+}
+body main .container__registro form fieldset #label-t {
+  background-color: #ffc107;
+}
+body main .container__panel {
+  background-color: #3DAE2B;
+  align-content: space-between;
+}
+@media screen and (max-width: 1130px) {
+  body main .container__panel fieldset {
+    font-size: 0.8rem;
+  }
+}
+body main .container__panel fieldset {
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+}
+body main .container__panel fieldset legend {
+  color: #091E3F;
+  font-weight: 900;
+}
+body main .container__guias {
+  grid-column: 1/span 2;
+}
+body main .container__guias form .guias__lista {
+  background-color: #FF9015;
+  align-items: center;
+}
+body main .container__guias form .guias__lista button {
+  font-size: 1.2em;
+  border-radius: 10px;
+  margin-top: 2%;
+  background-color: #091E3F;
+  color: #ffffff;
+}
+body main .container__guias form .guias__lista button:hover {
+  background-color: #ffc107;
+  cursor: pointer;
+  font-weight: 600;
+}
+body main .container__guias form .guias__lista legend {
+  color: #091E3F;
+  font-weight: 900;
+}
+body main .container__guias form .guias__lista table {
+  width: 100%;
+  color: #ffffff;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: solid 1px #ffffff;
+  font-size: 1rem;
+}
+@media screen and (max-width: 1130px) {
+  body main .container__guias form .guias__lista table {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 925px) {
+  body main .container__guias form .guias__lista table {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 754px) {
+  body main .container__guias form .guias__lista table {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 610px) {
+  body main .container__guias form .guias__lista table {
+    font-size: 0.38rem;
+  }
+}
+body main .container__guias form .guias__lista table thead {
+  background-color: #e16c23;
+}
+body main .container__guias form .guias__lista table thead tr th {
+  padding: 20px 15px;
+  font-weight: 900;
+  border: 1px solid #FF9015;
+}
+body main .container__guias form .guias__lista table tbody tr {
+  border-bottom: 1px solid #ffffff;
+}
+body main .container__guias form .guias__lista table tbody tr td {
+  overflow-wrap: break-word;
+  white-space: normal;
+  border: 1px solid #ffffff;
+  padding: 20px;
+}
+body main .container__guias form .guias__lista table tbody tr td .btnMod {
+  width: 35px;
+}
+body main .container__guias form .guias__lista table tbody tr:hover {
+  background-color: #ffc107;
+  cursor: pointer;
+  font-weight: 900;
+}
+body footer {
+  margin: 0 20% 0 20%;
+}
+body footer .footer-blue {
+  padding: 20px 45px 20px 20px;
+  width: 100%;
+  background-color: #091E3F;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+body footer .footer-blue__info {
+  align-items: justify;
+  width: 100%;
+  color: #ffffff;
+  line-height: 0.3cm;
+}
+body footer .footer-blue__info p {
+  font-size: 13px;
+  line-height: 0.3cm;
+}
+body footer .footer-blue__info label {
+  font-size: 13px;
+  line-height: 0.3cm;
+}
+body footer .footer-blue__media #logo-sky {
+  width: 80%;
+}
+body footer .footer-blue__media .media__social-media {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+body footer .footer-blue__media .media__social-media img {
+  width: 12%;
+}
+body footer .copy {
+  background-color: #6AC6DE;
+  color: #ffffff;
+  font-weight: 800px;
+  width: 100%;
+  height: 50px;
+  padding: 3px 45px 5px 20px;
+}/*# sourceMappingURL=main.css.map */

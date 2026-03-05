@@ -1,0 +1,33 @@
+@mixin mediaquery($ancho) {
+    @media screen and (max-width: #{$ancho}) {
+        @content;
+    }
+}
+@mixin flex{
+    display:flex;
+    justify-content: space-between;
+}
+@mixin ancho($ancho){
+    width: $ancho;
+
+}
+@mixin hover($color){
+    background-color:$color;
+    cursor:pointer;
+}
+@mixin link($color){
+    color:$color;
+    cursor:pointer;
+    text-decoration: line;
+}
+@mixin legend{
+    color: $colorBlue;
+    font-weight: 900;
+}
+@mixin botones{
+    font-size: 1.2em;
+    border-radius: 10px;
+    margin-top: 2%;
+    background-color: $colorBlue;
+    color:$colorWhite;
+}
